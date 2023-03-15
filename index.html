@@ -1,14 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<link rel="stylesheet" type="text/css" href="movie_list.css">
-		<link rel="icon" type="image/x-icon" href="/YOUR_PATH/favicon.ico">
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="author" content="vasudevarao" />
+        <meta name="description" content="Download Telugu super hit movies for free" />
+
+		<link rel="stylesheet" type="text/css" href="movie_list.css">
+		<!-- Need to add icon -->
+		<!-- <link rel="icon" type="image/x-icon" href="/YOUR_PATH/favicon.ico"> -->
+
 		<title>telugu_movie_world</title>
 	</head>
 	<body>
-		<header><!-- navigation bar,search box--> 
+		<header>
+			<!-- navigation bar,search box--> 
 			<div class="navigator">
 				<a href="#" class="logo">Telugu Movie World</span></a>
+				<!-- Try to refactor class "hamburger" to something more relevent -->
 				<label class="hamburger">&#9776;</label>
 				<div class="links hide">
 					<a href="#">Home</a>
@@ -18,23 +28,29 @@
 				</div>
 			</div>
 			<script>
-			{
-			const hamburger = document.querySelector('.hamburger');
-			const navLink = document.querySelector('.links');
-			hamburger.addEventListener('click', () => {
-				navLink.classList.toggle('hide');
-			});
-			}
+				{
+				const hamburger = document.querySelector('.hamburger');
+				const navLink = document.querySelector('.links');
+				hamburger.addEventListener('click', () => {
+					navLink.classList.toggle('hide');
+				});
+				}
 			</script>
 		</header>
-		<section class="container"><!-- Display movie names and Display  movie songs-->
-			<!--<div class="options">
+		<section class="container">
+			<!-- Display movie names and Display  movie songs-->
+			<!--
+
+			<div class="options">
 				<li><a href="#">Movies</a></li>
 				<li><a href="#">Songs</a></li>
 				<li><a href="#">Updates and Trailers</a></li>
-			</div>-->
+			</div>
+
+			-->
 				<div class="movies_container">
-					<div class="search_bar">Search Bar</div><!-- Search Bar -->
+					<!-- Search Bar -->
+					<div class="search_bar">Search Bar</div>
 					<div class="movies">
 						<div class="movie">
 							<a href="#"><figure><img src="src/rrr.jpg" alt="RRR" target="_blank"><figcaption>RRR</figcaption></figure></a>
@@ -104,11 +120,13 @@
 				<div class="songs_container">
 				</div>
 				<div class="updates_container">
-				</div>
-						
+				</div>	
 		</section>
+
 		<br/><hr/> <hr/>
-		<footer><!-- Owner names  -->
+
+		<footer>
+			<!-- Owner names  -->
 			<div id="about">
 			<h3>About:</h3>
 			<ul>
@@ -118,18 +136,22 @@
 				<li>Any film Makers can Contact Us through Mail...ThankYou</li>
 			</ul>
 			</div>
+
 			<hr/><hr/>
+
 			<div id="help">
 				<h3>Help:</h3>
 				<li>Please Contact Throught My mail:<a href="mailto:kvasudevarao3@gmail.com">kvasudevarao3@gmail</a></li>
 			</div>
+
 			<hr/><hr/>
+
 			<div id="contactus">
-			<h3>Contact Us:</h3>
-			<ul>
-				<li>Contact Mail:<a href="mailto:kvasudevarao3@gmail.com">kvasudevarao3@gmail</a></li>
-				<li>Address:Vizianagaram,Andhra Pradesh India</li>
-			</ul>
+				<h3>Contact Us:</h3>
+				<ul>
+					<li>Contact Mail:<a href="mailto:kvasudevarao3@gmail.com">kvasudevarao3@gmail</a></li>
+					<li>Address:Vizianagaram,Andhra Pradesh India</li>
+				</ul>
 			</div>
 		</footer>
 	</body>
