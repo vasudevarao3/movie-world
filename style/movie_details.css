@@ -34,6 +34,7 @@ header .navigator .logo {
 header .navigator .hamburger {
   margin-right: 20px;
   font-size:30px;
+  cursor: pointer;
 }
 header .navigator .hamburger:hover{
   background-color: #000000;
@@ -46,7 +47,7 @@ header .navigator a {
   text-transform: uppercase;
 }
 header .navigator .links {
-  position: fixed;
+    position:absolute;
   width: 100%;
   top: 4rem;
   background-color: #001a00;
@@ -65,7 +66,7 @@ header .navigator .links a:hover {
 header .navigator .hide {
   display: none;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 825px) {
   header .navigator .links{
     display: block;
     position: static;
@@ -79,6 +80,9 @@ header .navigator .hide {
   }
   header .hamburger {
     display: none;
+  }
+  header .navigator .logo {
+    font-size:30px;
   }
 }
 
@@ -159,24 +163,22 @@ section .container .movie table tr td a:active{
 	border:2px solid #00ff00;
 	box-shadow: 0 0 10px #00ff00;
 }
-@media screen and (max-width400px){
-	
+
+@media screen and (max-width: 600px) {
+	section .container .details{
+		display:unset;
+	}
 }
 /*footer*/
 footer h3{
-	margin:2%;
+	margin-left:2%;
 	font-style:italic;
 }
 footer ul{
 	list-style:none;
-	padding-left:50px;;
+	padding-left:5%;
 }
-#about{
+#about,#help,#contactus{
 	padding:2%;
 }
-#help{
-	padding:2%;
-}
-#contactus{
-	padding:2%;
-}
+
