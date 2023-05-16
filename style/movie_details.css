@@ -105,6 +105,7 @@ section .container .details{
 	margin:2%;
 	border:2px solid #333;
 }
+
 section .container .details .image img{
 	margin:10px;
 	width:130px;
@@ -118,9 +119,8 @@ section .container .details .matter ul{
 }
 section .container .details .matter ul label{
 	color:#000000;
-	padding:5px;
+	padding:3px;
 	background-color:#00ff00;
-	font-size:1rem;
 	border-radius:3px;	
 }
 section .container .trailer{
@@ -142,12 +142,13 @@ section .container .movie{
 	border:2px solid #333;
 }
 section .container .movie video{
-	margin:5%;
+	width:96%;
+	height:auto;
+	margin:2%;
 	border:2px solid #333;
 }
 section .container .movie table{
-	margin:2%;
-	margin-left:20%;
+	margin:2%;	
 }
 section .container .movie table tr td a{
 	text-align:center;
@@ -169,6 +170,19 @@ section .container .movie table tr td a:active{
 		display:unset;
 	}
 }
+
+@media screen and (max-width: 450px) {
+	*{
+		font-size:10px;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	section .container .movie table{
+		margin:-5%;	
+	}
+}
+
 /*footer*/
 footer h3{
 	margin-left:2%;
@@ -181,4 +195,5 @@ footer ul{
 #about,#help,#contactus{
 	padding:2%;
 }
+
 
