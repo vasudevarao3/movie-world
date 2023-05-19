@@ -175,3 +175,8 @@ footer ul{
     margin-left:-10%;;
   }
 }
+@media screen and (max-width: 450px) {
+	footer{
+		font-size:10px;
+	}
+}
