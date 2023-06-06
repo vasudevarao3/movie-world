@@ -112,7 +112,7 @@ header .navigator .hide {
 }
 */
 /*section-container*/
-/*section-container-movie_container*/
+/* search-bar */
 .container .movies_container .search_bar {
   background-color:#002200;
   border-radius:10px;
@@ -127,6 +127,7 @@ header .navigator .hide {
   background-color: transparent;
   height: 40px;
   max-width: 700px;
+  font-size: large;
   color: white;
   border: 0; 
   flex: 1;
@@ -144,44 +145,42 @@ header .navigator .hide {
   border: 0;
 }
 
+/*section-container-movie_container*/
 .container .movies_container .movies {
-  margin:2%;
-  height:auto;
   display:flex; 
   flex-wrap:wrap;
+  border:1px solid white;
 }
-.container .movies_container .movie{
-	padding:10px;
+
+.container .movies_container .movies .movie{
+  margin:10px;
+  flex: 1 0 130px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
-.container .movies_container .movie a{
-  text-decoration:none;
-  color:#00ff00; 
+
+.container .movies_container .movies .movie img{
+  width:100%;
+  height:85%;
+  border-radius: 10px 10px 0 0;
 }
-.container .movies_container .movie figure{
-	border-radius:10px;
-	background-color:black;
-	border: 1px solid white;
+
+.container .movies_container .movies .movie .name{
+  text-align:center;
+  color:#00ff00;
 }
-.container .movies_container .movie figure:hover{
+
+.container .movies_container .movies .movie:hover{
 	border:2px solid #333;
-	box-shadow: 0 0 10px #fff;
+	box-shadow: 0 0 10px #fff; 
 	border-radius:10px;
 }
-.container .movies_container .movie figure:active{
+.container .movies_container .movie:active{
 	border:2px solid #00ff00;
 	box-shadow: 0 0 10px #00ff00;
 	border-radius:10px;
 }
-.container .movies_container .movie img{
-	width:120px;
-	height:170px;
-	border-radius:10px;
-}
-.container .movies_container .movie figcaption{
-	padding:5%;
-	text-align:center;
-	border-radius:10px;
-}
+
 /*footer*/
 footer h3{
 	margin-left:2%;
