@@ -130,10 +130,32 @@ section .container .trailer{
 	border:2px solid #333;
 }
 section .container .songs{
-	width:96%;
-	height:400px;
-	margin:2%;
+	margin:3%;
 	border:2px solid #333;
+}
+section .container .songs .songs_downloads{
+	justify-items: center;
+	align-items:center;
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-template-rows:repeat(5,1fr);
+}
+section .container .songs .songs_downloads .item{
+	padding:10px;
+}
+section .container .songs .songs_downloads .item label{
+	color:#000000;
+	padding:3px;
+	background-color:#00ff00;
+	border-radius:3px;	
+}
+section .container .songs .songs_downloads .item label:hover{
+	border:2px solid white;
+	box-shadow: 0 0 10px white;
+}
+section .container .songs .songs_downloads .item label:active{
+	border:2px solid #00ff00;
+	box-shadow: 0 0 10px #00ff00;
 }
 section .container .movie{
 	width:96%;
@@ -147,20 +169,29 @@ section .container .movie video{
 	margin:2%;
 	border:2px solid #333;
 }
-section .container .movie table{
-	margin:2%;	
+section .container .movie{
+	margin:3%;	
 }
-section .container .movie table tr td a{
-	text-align:center;
-	background-color:green;
-	color:white;
-	border-radius:5px;
+section .container .movie .movie_downloads{
+	justify-items: center;
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-template-rows:repeat(5,1fr);
 }
-section .container .movie table tr td a:hover{
+section .container .movie .movie_downloads .item{
+	padding:10px;
+}
+section .container .movie .movie_downloads .item label{
+	color:#000000;
+	padding:3px;
+	background-color:#00ff00;
+	border-radius:3px;	
+}
+section .container .movie .movie_downloads .item label:hover{
 	border:2px solid white;
 	box-shadow: 0 0 10px white;
 }
-section .container .movie table tr td a:active{
+section .container .movie .movie_downloads .item label:active{
 	border:2px solid #00ff00;
 	box-shadow: 0 0 10px #00ff00;
 }
@@ -177,11 +208,6 @@ section .container .movie table tr td a:active{
 	}
 }
 
-@media screen and (max-width: 290px) {
-	section .container .movie table{
-		margin:-5%;	
-	}
-}
 
 /*footer*/
 footer h3{
