@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-size: 1rem;
+  
 }
 a{
 	text-decoration:none;
@@ -114,6 +114,11 @@ section .container .details .matter ul{
 	color:white;
 	padding:10px;
 }
+@media screen and (max-width: 500px) {
+	section .container .details .matter{
+		font-size:10px;
+	}
+}
 section .container .details .matter ul label{
 	color:#000000;
 	padding:3px;
@@ -188,10 +193,9 @@ section .container .movie .movie_downloads{
 	display:grid;
 	grid-template-columns:repeat(3,1fr);
 	grid-template-rows:repeat(5,1fr);
-	gap:1rem;
-	padding: 1rem 0 1rem 0;
+	gap:10px;
+	padding: 6px 10px 10px 5px;
 }
-
 section .container .movie .movie_downloads .item label{
 	color:#000000;
 	padding:3px;
@@ -214,7 +218,7 @@ section .container .movie .movie_downloads .item label:active{
 }
 
 /*footer*/
-footer h3{
+/* footer h3{
 	margin-left:2%;
 	font-style:italic;
 }
@@ -224,6 +228,6 @@ footer ul{
 }
 #about,#help,#contactus{
 	padding:2%;
-}
+} */
 
 

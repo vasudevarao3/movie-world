@@ -2,7 +2,6 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-size: 1rem;
 }
 a{
 	text-decoration:none;
@@ -182,23 +181,19 @@ header .navigator .hide {
 }
 
 /*footer*/
-footer h3{
-	margin-left:2%;
-	font-style:italic;
+footer{
+  font-size:15px;
+  margin:0 2% 0 2%;
 }
+
 footer ul{
 	list-style:none;
-	padding-left:5%;
+  margin-left:-20%;
 }
 #about,#help,#contactus{
 	padding:2%;
 }
-@media screen and (min-width: 450px) {
-  footer ul{
-    margin-left:-10%;;
-  }
-}
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 	footer{
 		font-size:10px;
 	}
