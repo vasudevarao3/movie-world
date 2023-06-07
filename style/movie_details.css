@@ -83,7 +83,6 @@ header .navigator .hide {
   }
 }
 
-
 /*section*/
 section{
   margin:2%;
@@ -92,17 +91,17 @@ section{
   border-radius:10px;
 }
 section .container h3{
-	margin:1.5%;
+	margin:2%;
 	padding-left:2%;
 	font-style:italic;
 }
 section .container .details{
-	display:flex;
 	font-size:15px;
-	margin:2%;
+	max-width:100%;
+	height:auto;
+	margin:3%;
 	border:2px solid #333;
 }
-
 section .container .details .image img{
 	margin:10px;
 	width:130px;
@@ -170,19 +169,15 @@ section .container .songs .songs_downloads .item label:active{
 	
 }
 section .container .movie{
-	width:96%;
+	max-width:100%;
 	height:auto;
-	margin:2%;
+	margin:3%;
 	border:2px solid #333;
 }
 section .container .movie video{
 	width:96%;
-	height:auto;
 	margin:2%;
 	border:2px solid #333;
-}
-section .container .movie{
-	margin:3%;	
 }
 section .container .movie video{
 	max-width:100%;
@@ -211,9 +206,9 @@ section .container .movie .movie_downloads .item label:active{
 	box-shadow: 0 0 10px #00ff00;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 	section .container .details{
-		display:unset;
+		display:flex;
 	}
 }
 
